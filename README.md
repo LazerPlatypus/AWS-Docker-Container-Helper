@@ -17,11 +17,13 @@
   
   when you have a CLI open in the directory of the source code of the container you'd like to send to AWS, you have these commands avaliable:
  
+ <br>
  Commands:
 
   !! Important this command MUST be run before any of the other commands become accessible
       This command only needs to be run ONCE unless you want to access a different amazon account number or account region.
       
+  <br>
   Create-Commands [amazon account number] [amazon account region]
   
   Description:
@@ -30,6 +32,7 @@
    
    The Create-Commands.bat file should be in its OWN folder, and that folder should be added to the PATH through Environemnt Variables
 
+  <br>
   Build [name of image]
   
   Runs:
@@ -41,6 +44,7 @@
    First step of PUSH-ing (deploying) your container to AWS
 
 
+  <br>
   Create-Repo [name of image]
   
   Runs:
@@ -52,6 +56,7 @@
    creates a repository on amazon ecr with the name provided. the name provided should be identical to the image name in the Build.bat command
    
 
+  <br>
   Deploy [name of image]
   
   Runs:
@@ -73,7 +78,7 @@
    
    [amazon account number] and [amazon account region] are already populated when Create-Commands is run.
    
-  
+  <br>
   Test [name of image]
   
   Runs docker run -dp 9000:8080 [name of image]
@@ -86,11 +91,12 @@
 
  This utility also has compound commands to further optimize deployment
  
-   
+   <br>
   Build-Deploy [name of image]
   
   Runs the Build.bat command then the Deploy.bat command
 
+  <br>
   Build-Test [name of image]
   
   Runsthe Build.bat command then the Deploy.bat command  
