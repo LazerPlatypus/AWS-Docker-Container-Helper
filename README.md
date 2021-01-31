@@ -20,10 +20,10 @@
  <br>
  Commands:
 
+<br>
   !! Important this command MUST be run before any of the other commands become accessible
       This command only needs to be run ONCE unless you want to access a different amazon account number or account region.
-      
-  <br>
+  
   Create-Commands [amazon account number] [amazon account region]
   
   Description:
