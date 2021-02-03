@@ -48,6 +48,7 @@ ECHO IF %%1.==. GOTO Err >> %filename%
 ECHO @echo on >> %filename%
 ECHO docker build -t %%1 . >> %filename%
 ECHO @echo off >> %filename%
+ECHO GOTO End >> %filename%
 ECHO. >> %filename%
 ECHO :Err >> %filename%
 ECHO	Echo No image name >> %filename%
